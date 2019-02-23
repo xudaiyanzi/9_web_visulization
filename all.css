@@ -2,14 +2,15 @@
     background-color: #00b3b3;
 }
 
-.contianerJSize {
+.border-green{
+    border-color: #00b3b3;
+    border-style: solid;
+}
+
+.containerJSize {
     max-width: 1600px;
     margin: auto;
     margin-bottom: 50px;
-}
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
 }
 
 
@@ -33,9 +34,13 @@
     width: 150px;
 }
 
+.navbar a:hover {
+    background-color: #00b3b3;
+}
+
 .picCompSize{
-    height:400px;
-    width:400px;
+    height:500px;
+    width:100%;
 }
 
 .picSumSize{
@@ -49,8 +54,8 @@
 }
 
 .picVisSize{
-    width:100px;
-    height:100px;
+    width:180px;
+    height:180px;
 }
 
 .spaceLine{
@@ -63,4 +68,10 @@
 
 .word-green{
     color: #00b3b3; 
+}
+
+@media (max-width: 500px) {
+  .navbar{
+       background-color: #00b3b3;
+  }
 }
