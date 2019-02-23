@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- add a customized style.css --> 
+       <!--including-->
+          <!-- the word font -->
+          <!-- the word fontsize -->
+          <!-- the navbar-band size-->
+          <!-- the box size -->
+          <!-- the dropdown hover --> 
+  <link rel="stylesheet" href="all.css">
+
+</head>
+
+<body class="bg-secondary">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+
+       <!-- /.navbar-header -->
+       <div class="navbar-header">    
+         <!-- navbar-brand-->  
+         <div class= "navbar-brand">  
+            <nav class="text-white bg-green fontTNR font30 navBOX">
+              <a href="1_landingPage.html" class="text-white"><strong>Lattitude</strong></a>
+            </nav>
+         </div>
+       </div>
+
+        <!-- /.navbar-collapse button-->
+       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+       <!-- navbar list -->
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav ml-auto"> 
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+             </a>
+
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="2_temperaturePage.html">Max Temperature</a>
+               <a class="dropdown-item" href="3_humidityPage.html">Humidity</a>
+               <a class="dropdown-item" href="4_cloudinessPage.html">Cloudiness</a>
+               <a class="dropdown-item" href="5_windSpeedPage.html">Wind Speed</a>
+             </div>
+           </li>
+ 
+           <!-- /.navbar-link -->
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="6_comparePage.html">Comparison</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="7_dataPage.html">Data</a>
+           </li>
+         </ul>
+       </div>
+      
+      
+   </nav>
+
+</br>
+</br>
+</br>
+</br>
+
+  
+  <!-- Our rows function in containers (grid created). -->
+   <div class="container contianerJSize">
+     <!-- set a "row" to layout "summary" and "visualization" -->
+     
+     <div class="row">
+      <!-- /.use bootstrap jumbotron --to layout "summary" -->
+       <div class="col-md-8">
+         <div class="jumbotron bg-white">
+           <h1 class="fontTNR word-green"><strong>Summary: Latitude vs. X</strong></h1>
+           <hr class="my-4">
+    
+           <img class="picFloatLeft picSumSize" src="Resources/assets/images/Fig1.png" alt="any png in Resources/assets/images">
+           <p class="spaceLine">The purpose of this project is to analyze how weather changes as you get closer to the equator. 
+            To accomplish this analysis, we randomly selected over 500 unique (non-repeat) cities based on latitude and longitude.
+            We did a weather check on each of the cities using a series of successive API calls. Include a print log of each city as it's being processed with the city number and city name. 
+            We then saved a CSV of all data retrieved.
+           </p>
+           <p class="spaceLine">After assembling the dataset, we used the Matplotlib plotting varous aspects of the weather v. latitude.
+            Including: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude
+            This site provides the source data and visualizations created as part of the analysis, as well as 
+            explanations and descriptions of any trends and correlations witnessed.    
+           </p>
+         </div>
+       </div>
+
+      <!-- /.use bootstrap jumbotron --to layout "Visualization" -->
+       <div class="col-md-4">
+         <div class="jumbotron bg-white">
+           <h1 class="fontTNR word-green font26"><strong>Visualizations</strong></h1>
+           <hr class="my-4">
+           <a href="2_temperaturePage.html"> <img class="picVisSize" scr="Resources/assets/images/Fig1.png" alt="Latitude vs MaxTemperature"></a>
+           <a href="3_humidityPage.html"> <img class="picVisSize" scr="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity"></a>
+           <a href="4_cloudinessPage.html"> <img class="picVisSize" scr="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness"></a>
+           <a href="5_windSpeedPage.html"> <img class="picVisSize" scr="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed"></a>
+         </div>
+       </div>
+     </div>
+   </div>
+</body>
+
+</html>

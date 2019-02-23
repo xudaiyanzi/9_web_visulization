@@ -1,0 +1,66 @@
+.bg-green{
+    background-color: #00b3b3;
+}
+
+.contianerJSize {
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+.fontTNR{
+    font-family:"Times New Roman", Times, serif; 
+}
+
+.font30{
+    font-size:30px;
+}
+
+.font20{
+    font-size:26px;
+}
+
+.navBOX {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px; 
+    width: 150px;
+}
+
+.picCompSize{
+    height:400px;
+    width:400px;
+}
+
+.picSumSize{
+    height:250px;
+    width:250px;
+    display:block;
+}
+
+.picFloatLeft{
+    float: left;
+}
+
+.picVisSize{
+    width:100px;
+    height:100px;
+}
+
+.spaceLine{
+    line-height: 2.3;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.word-green{
+    color: #00b3b3; 
+}

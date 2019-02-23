@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- add a customized style.css --> 
+       <!--including-->
+          <!-- the word font -->
+          <!-- the word fontsize -->
+          <!-- the navbar-band size-->
+          <!-- the box size -->
+          <!-- the dropdown hover --> 
+  <link rel="stylesheet" href="all.css">
+
+</head>
+
+<body class="bg-secondary">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+
+       <!-- /.navbar-header -->
+       <div class="navbar-header">    
+         <!-- navbar-brand-->  
+         <div class= "navbar-brand">  
+            <nav class="text-white bg-green fontTNR font30 navBOX">
+              <a href="1_landingPage.html" class="text-white"><strong>Lattitude</strong></a>
+            </nav>
+         </div>
+       </div>
+
+        <!-- /.navbar-collapse button-->
+       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+       <!-- navbar list -->
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav ml-auto"> 
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+             </a>
+
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="2_temperaturePage.html">Max Temperature</a>
+               <a class="dropdown-item" href="3_humidityPage.html">Humidity</a>
+               <a class="dropdown-item" href="4_cloudinessPage.html">Cloudiness</a>
+               <a class="dropdown-item" href="5_windSpeedPage.html">Wind Speed</a>
+             </div>
+           </li>
+ 
+           <!-- /.navbar-link -->
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="6_comparePage.html">Comparison</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="7_dataPage.html">Data</a>
+           </li>
+         </ul>
+       </div>
+      
+      
+   </nav>
+
+</br>
+</br>
+</br>
+</br>
+
+  
+  <!-- Our rows function in containers (grid created). -->
+   <div class="container contianerJSize">
+     <!-- set a "row" to layout "summary" and "visualization" -->
+     
+     <div class="row">
+         <div class="col-md-12">
+           <div class="jumbotron bg-white">
+             <h1 class="fontTNR word-green"><strong>Data</strong></h1>
+             <hr class="my-4">
+             <p>The following table includes all the data used for plotting during the project.
+                 <a href="Resources/cities.csv">.csv file</a>
+             </p>
+                    
+             <table class="table table-striped">		
+                 <thead>			
+                   <tr>				
+                      <th scope="col">City_ID</th>			
+                      <th scope="col"> City</th>			
+                      <th scope="col">Cloudiness</th>			
+                      <th scope="col">Country</th>			
+                      <th scope="col">Date</th>			
+                      <th scope="col">Humidity</th>			
+                      <th scope="col">Lat</th>			
+                      <th scope="col">Lng</th>			
+                      <th scope="col">Max Temp</th>			
+                      <th scope="col">Wind Speed</th>			
+                  </tr>			
+                 </thead>			
+                 <tbody>			
+                   <tr>			
+                      <td>0</td>			
+                      <td>jacareacanga</td>			
+                      <td>0</td>			
+                      <td>BR</td>			
+                      <td>1528902000</td>			
+                      <td>62</td>			
+                      <td>-6.22</td>			
+                      <td>-57.76</td>			
+                      <td>89.6</td>			
+                      <td>6.93</td>			
+                   </tr>			
+                   <tr>			
+                      <td>1</td>			
+                      <td>kaitangata</td>			
+                      <td>100</td>			
+                      <td>NZ</td>			
+                      <td>1528905304</td>			
+                      <td>94</td>			
+                      <td>-46.28</td>			
+                      <td>169.85</td>			
+                      <td>42.61</td>			
+                      <td>5.64</td>			
+                   </tr>			
+                   <tr>			
+                      <td>2</td>			
+                      <td>goulburn</td>			
+                      <td>20</td>			
+                      <td>AU</td>			
+                      <td>1528905078</td>			
+                      <td>91</td>			
+                      <td>-34.75</td>			
+                      <td>149.72</td>			
+                      <td>44.32</td>			
+                      <td>10.11</td>			
+                   </tr>			
+                   <tr>			
+                      <td>3</td>			
+                      <td>lata</td>			
+                      <td>76</td>			
+                      <td>IN</td>			
+                      <td>1528905305</td>			
+                      <td>89</td>			
+                      <td>30.78</td>			
+                      <td>78.62</td>			
+                      <td>59.89</td>			
+                      <td>0.94</td>			
+                   </tr>			
+                   <tr>			
+                      <td>4</td>			
+                      <td>chokurdakh</td>			
+                      <td>0</td>			
+                      <td>RU</td>			
+                      <td>1528905306</td>			
+                      <td>88</td>			
+                      <td>70.62</td>			
+                      <td>147.9</td>			
+                      <td>32.17</td>			
+                      <td>2.95</td>			
+                   </tr>			
+                   <tr>			
+                      <td>5</td>			
+                      <td>martyush</td>			
+                      <td>92</td>			
+                      <td>RU</td>			
+                      <td>1528905306</td>			
+                      <td>94</td>			
+                      <td>56.4</td>			
+                      <td>61.89</td>			
+                      <td>55.03</td>			
+                      <td>9.33</td>			
+                   </tr>			
+                   <tr>			
+                      <td>6</td>			
+                      <td>hobart</td>			
+                      <td>20</td>			
+                      <td>AU</td>			
+                      <td>1528902000</td>			
+                      <td>87</td>			
+                      <td>-42.88</td>			
+                      <td>147.33</td>			
+                      <td>44.6</td>			
+                      <td>8.05</td>			
+                   </tr>			
+                   <tr>			
+                      <td>7</td>			
+                      <td>broken hill</td>			
+                      <td>0</td>			
+                      <td>AU</td>			
+                      <td>1528905311</td>			
+                      <td>88</td>			
+                      <td>-31.97</td>			
+                      <td>141.45</td>			
+                      <td>44.5</td>			
+                      <td>7.31</td>			
+                   </tr>			
+                   <tr>			
+                      <td>8</td>			
+                      <td>harnosand</td>			
+                      <td>0</td>			
+                      <td>SE</td>			
+                      <td>1528903200</td>			
+                      <td>44</td>			
+                      <td>62.63</td>			
+                      <td>17.94</td>			
+                      <td>60.8</td>			
+                      <td>13.87</td>			
+                   </tr>			
+                   <tr>			
+                      <td>9</td>			
+                      <td>tuatapere</td>			
+                      <td>0</td>			
+                      <td>NZ</td>			
+                      <td>1528905312</td>			
+                      <td>100</td>			
+                      <td>-46.13</td>			
+                      <td>167.69</td>			
+                      <td>38.92</td>			
+                      <td>3.4</td>			
+                   </tr>			
+                   <tr>			
+                      <td>10</td>			
+                      <td>puerto ayora</td>			
+                      <td>90</td>			
+                      <td>EC</td>			
+                      <td>1528902000</td>			
+                      <td>69</td>			
+                      <td>-0.74</td>			
+                      <td>-90.35</td>			
+                      <td>77.0</td>			
+                      <td>13.87</td>			
+                   </tr>			
+                 </tbody>
+             </table>
+           </div>
+         </div> 
+     </div> 
+     
+    
+    </div>
+
+</body>
+
+</html>
