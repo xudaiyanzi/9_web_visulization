@@ -26,17 +26,31 @@
     font-size:26px;
 }
 
-.navBOX {
+.navbar{
+    background-color: #ffffff;
+}
+
+.navbar-brand{
+    background-color: #00b3b3; 
     padding: 15px;
     text-align: center;
     vertical-align: middle;
     line-height: 15px; 
     width: 150px;
 }
-
 .navbar a:hover {
     background-color: #00b3b3;
 }
+
+.navbar-collapse{
+    background-color: #ffffff;
+}
+
+@media (max-width: 990px) {
+    .navbar-expand-lg{
+         background-color: #00b3b3;
+    }
+  }
 
 .picCompSize{
     height:500px;
@@ -70,8 +84,4 @@
     color: #00b3b3; 
 }
 
-@media (max-width: 500px) {
-  .navbar{
-       background-color: #00b3b3;
-  }
-}
+
